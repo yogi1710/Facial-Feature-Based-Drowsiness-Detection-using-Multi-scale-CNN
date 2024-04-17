@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ValidationForm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LINEARICONS -->
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="static/css/style1.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="inner">
+        <!-- <img src="static/images/signin.png" alt="" class="image-1" /> -->
+        <h2 style="color: rgb(26, 24, 24); font-size: xx-large">
+          Validation Form
+        </h2>
+        <form action="{{ url_for('predict_lo') }}" method="POST">
+          <h1 style="color: darkblue">Write the OTP here!</h1>
+          <br />
+          <div style="text-align: center">
+            <input
+              type="text"
+              name="message"
+              required="required"
+              style="
+                font-size: 12pt;
+                width: 200px;
+                background-color: #c4b7b7;
+                color: #333;
+                border-radius: 3px;
+              "
+            />
+          </div>
+          <br />
+          <p style="color: red; font-size: 16px; align-content: center">
+            <alert>OTP will be sent to your resgister email id.</alert>
+          </p>
+          <div class="p-t-15">
+            <button
+              class="btn btn--radius-2 btn--blue"
+              type="submit"
+              style="font-weight: 200; font-weight: bold; border-radius: 5px"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+  <!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
